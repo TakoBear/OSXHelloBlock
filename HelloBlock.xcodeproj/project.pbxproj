@@ -18,6 +18,9 @@
 		09075E64193A113C009732AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09075E43193A113C009732AB /* Cocoa.framework */; };
 		09075E6C193A113C009732AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09075E6A193A113C009732AB /* InfoPlist.strings */; };
 		09075E6E193A113C009732AB /* HelloBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09075E6D193A113C009732AB /* HelloBlockTests.m */; };
+		09075E7C193A1202009732AB /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09075E7A193A1202009732AB /* MainWindowController.m */; };
+		09075E7D193A1202009732AB /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09075E7B193A1202009732AB /* MainWindowController.xib */; };
+		09075E7F193A1251009732AB /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 09075E7E193A1251009732AB /* img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		09075E69193A113C009732AB /* HelloBlockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloBlockTests-Info.plist"; sourceTree = "<group>"; };
 		09075E6B193A113C009732AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09075E6D193A113C009732AB /* HelloBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloBlockTests.m; sourceTree = "<group>"; };
+		09075E79193A1202009732AB /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		09075E7A193A1202009732AB /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		09075E7B193A1202009732AB /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		09075E7E193A1251009732AB /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +122,10 @@
 		09075E49193A113C009732AB /* HelloBlock */ = {
 			isa = PBXGroup;
 			children = (
+				09075E78193A11F6009732AB /* Controllers */,
+				09075E77193A11EC009732AB /* Resources */,
 				09075E55193A113C009732AB /* bearAppDelegate.h */,
 				09075E56193A113C009732AB /* bearAppDelegate.m */,
-				09075E58193A113C009732AB /* MainMenu.xib */,
 				09075E5B193A113C009732AB /* Images.xcassets */,
 				09075E4A193A113C009732AB /* Supporting Files */,
 			);
@@ -152,6 +160,25 @@
 				09075E6A193A113C009732AB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09075E77193A11EC009732AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09075E7E193A1251009732AB /* img.png */,
+				09075E7B193A1202009732AB /* MainWindowController.xib */,
+				09075E58193A113C009732AB /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		09075E78193A11F6009732AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09075E79193A1202009732AB /* MainWindowController.h */,
+				09075E7A193A1202009732AB /* MainWindowController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +261,9 @@
 				09075E4E193A113C009732AB /* InfoPlist.strings in Resources */,
 				09075E5C193A113C009732AB /* Images.xcassets in Resources */,
 				09075E54193A113C009732AB /* Credits.rtf in Resources */,
+				09075E7F193A1251009732AB /* img.png in Resources */,
 				09075E5A193A113C009732AB /* MainMenu.xib in Resources */,
+				09075E7D193A1202009732AB /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09075E7C193A1202009732AB /* MainWindowController.m in Sources */,
 				09075E57193A113C009732AB /* bearAppDelegate.m in Sources */,
 				09075E50193A113C009732AB /* main.m in Sources */,
 			);
